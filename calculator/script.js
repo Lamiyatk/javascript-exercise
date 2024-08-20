@@ -1,7 +1,7 @@
 let result;
-let value1 = parseInt(prompt("value1"));
+let value1 = parseInt(prompt("Enter value1"));
 let operation =(prompt("operation"));
-let value2 = parseInt(prompt("value2"));
+let value2 = parseInt(prompt("Enter value2"));
 
 
 function calculator(value1,operation,value2) {
@@ -21,6 +21,8 @@ function calculator(value1,operation,value2) {
         case "%":
           result = value1 % value2;
           break;
+        default:
+          result = "invalid operation";
   }
   return result;
 
